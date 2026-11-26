@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hartono Household Budget — Plan, track and save together</title>
+<meta name="description" content="A household budget site for the Hartono family: track spending, set category budgets, pay bills on time and grow savings goals. Works offline, on desktop and phone.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true">H</span>
+    <div class="brand-text">
+      <h1>Hartono Household Budget</h1>
+      <p>Plan it. Track it. Save together.</p>
+    </div>
+  </div>
+  <div class="month-switch" role="group" aria-label="Choose month">
+    <button id="month-prev" type="button" aria-label="Previous month">&#8249;</button>
+    <span id="month-label" aria-live="polite">November 2026</span>
+    <button id="month-next" type="button" aria-label="Next month">&#8250;</button>
+  </div>
+</header>
+<nav class="mainnav" aria-label="Main">
+  <a href="#/" data-route="dashboard">Dashboard</a>
+  <a href="#/transactions" data-route="transactions">Transactions</a>
+  <a href="#/budgets" data-route="budgets">Budgets</a>
+  <a href="#/bills" data-route="bills">Bills &amp; recurring</a>
+  <a href="#/goals" data-route="goals">Savings goals</a>
+  <a href="#/reports" data-route="reports">Reports</a>
+</nav>
+<main id="view" class="view"></main>
+<footer class="foot">
+  <p>Hartono household budget &middot; Sample data for October&ndash;December 2026 &middot; Your changes are saved on this device only.</p>
+  <button id="reset-demo" type="button">Reset demo data</button>
+</footer>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
